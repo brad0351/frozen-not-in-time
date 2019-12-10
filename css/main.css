@@ -1,0 +1,140 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+}
+
+section {
+  max-height: 520px;
+}
+
+img {
+  width: 180px;
+}
+
+.banner {
+  min-height: 500px;
+  background-image: repeating-linear-gradient(-32.5deg, #c9fcff, #c9fcff 1%, #d4fdff 2%, #d4fdff 3%);
+  border-top: 7.5px solid #b3fbff;
+  border-bottom: 7.5px solid #b3fbff;
+}
+
+.cone-wrap {
+  min-height: 490px;
+}
+
+.banner-content {
+  text-shadow: 1px 1px rgba(0, 0, 0, .25);
+  left: 2.5rem;
+  top: 5rem;
+  -webkit-animation: banner-content 1s 5s linear;
+  animation: banner-content 1s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.intro-para {
+  position: absolute;
+  top: 105px;
+  left: 58px;
+  opacity: 0;
+  animation: intro-paragraph .2s .2s linear forwards;
+
+}
+
+@keyframes banner-content {
+
+  0% {
+    opacity: 0;
+    filter: blur(1px);
+  }
+
+  100% {
+    opacity: 2;
+    filter: blur(0);
+  }
+
+}
+
+h1 {
+  color: #990073;
+  transform: rotate(-9deg);
+  transform-origin: left center;
+}
+
+p {
+  max-width: 19em;
+  color: #c09;
+  transform: rotate(-5deg);
+  transform-origin: left center;
+}
+
+h1,
+p,
+a {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.btn-ghost {
+  border-color: #990073;
+  color: #c09;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(204, 0, 153, .15);
+  border-color: #990073;
+  color: #c09;
+}
+
+.cone {
+  height: 175px;
+}
+
+.cone {
+  bottom: 10px;
+  left: 60px;
+  z-index: 2;
+  transform: translateY(-100rem);
+  animation: cone 1s linear forwards;
+}
+
+.mint {
+  bottom: 115px;
+  left: 60px;
+  z-index: 1;
+  transform: translateY(-100rem);
+  animation: cone 1s .5s linear forwards;
+}
+
+.choco {
+  bottom: 195px;
+  left: 65px;
+  z-index: 3;
+  transform: translateY(-100rem);
+  animation: cone 1s 1s linear forwards;
+}
+
+.vanilla {
+  bottom: 280px;
+  left: 60px;
+  z-index: 4;
+  transform: translateY(-100rem);
+  animation: cone 1s 1.5s linear forwards;
+}
+
+.cherry {
+  bottom: 360px;
+  left: 60px;
+  z-index: 5;
+  transform: translateY(-100rem);
+  animation: cone 1s 2s linear forwards;
+}
+
+@keyframes cone {
+
+  0% {
+    transform: translateY(-100rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
