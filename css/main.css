@@ -26,17 +26,8 @@ img {
   left: 2.5rem;
   top: 5rem;
   -webkit-animation: banner-content 1s 5s linear;
-  animation: banner-content 1s 1.5s linear forwards;
+  animation: banner-content 2s 3s linear forwards;
   opacity: 0;
-}
-
-.intro-para {
-  position: absolute;
-  top: 105px;
-  left: 58px;
-  opacity: 0;
-  animation: intro-paragraph .2s .2s linear forwards;
-
 }
 
 @keyframes banner-content {
@@ -84,12 +75,9 @@ a {
 }
 
 .cone {
-  height: 175px;
-}
-
-.cone {
   bottom: 10px;
   left: 60px;
+  height: 175px;
   z-index: 2;
   transform: translateY(-100rem);
   animation: cone 1s linear forwards;
